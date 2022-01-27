@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    {{#each css}}
+    <link rel="stylesheet" href="css/{{this}}">
+    {{/each}}
+    <title>Movie Seat Booking</title>
+  </head>
+
+  <body>
+    <form action="" method="post">
+
+      <label>NAME</label><input value="" name="Name" /><br>
+
+
+      <div class="Cinema-container">
+        <label>Movie Name: </label>
+        <select id="MovieName" name="MovieName">
+          <option value="Avengers : Endgame ">Avengers : Endgame</option>
+          <option value="Joker">Joker</option>
+          <option value="Toy Story 4">Toy Story 4</option>
+          <option value="The Lion King">The Lion King</option>
+        </select>
+      </div>
+
+
+    <div class="Cinema-container">
+      <label>Price Per Ticket:</label>
+      <select id="CostPerTicket" name="CostPerTicket">
+        <option value="600">RS 600</option>
+        <option value="550">RS 550</option>
+        <option value="400">RS 400</option>
+        <option value="500">RS 500</option>
+      </select>
+    </div>
+
+      <div class="Cinema-container">
+      <label>Pick a cinema:</label>
+      <select id="CinemaName" name=CinemaName>
+        <option value="PVR Kandivali">PVR Kandivali</option>
+        <option value="INOX Malad">INOX Malad</option>
+        <option value="IMAX Borivali">IMAX Borivali</option>
+      </select>
+    </div>
+    <label for="PRICE">PRICE</label><br>
+      <input type="text" id="fname" name="TotalAmount">
+      <br>
+
+       <button type="submit">SUBMIT</button>
+  </form>
+
+    <ul class="showcase">
+      <li>
+        <div class="seat"></div>
+        <h5><small>N/A</small></h5>
+      </li>
+      <li>
+        <div class="seat selected"></div>
+        <h6><small>Selected</small></h6>
+      </li>
+      <li>
+        <div class="seat occupied"></div>
+        <h4><small>Occupied</small></h4>
+      </li>
+    </ul>
+
+    <div class="container">
+      <div class="screen"></div>
+
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat occupied"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+
+    <p class="text">
+      You have selected <span id="count">0</span><br>
+      seats for a price of Rs<span
+        id="total"
+        >0</span
+      >
+    </p>
+    
+   {{#each js}}    
+    <script src="/js/{{this}}"></script>
+  {{/each}}
+        
+   
+  </body>
+</html>
